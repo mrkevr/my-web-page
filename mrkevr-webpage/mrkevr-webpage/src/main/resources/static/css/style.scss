@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
+@import "typewriter";
+@import "breakpoint";
+@import "float";
+@import "birds";
+
+* {
+    font-family: 'Press Start 2P', monospace !important;
+}
+
+.select {
+    &:hover {
+        color: gold;
+    }
+
+    span {
+        visibility: hidden;
+    }
+
+    &:hover {
+        span {
+            visibility: visible;
+            color: white;
+        }
+    }
+}
+
+#offcanvasProject,
+#offcanvasContact {
+
+    height: 100vh;
+    color: white;aaaaaaaaaaaaa
+
+    .offcanvas-body {
+        ul {
+            li {
+                margin-bottom: 15px;
+                margin-left: 3ch;
+
+                span {
+                    visibility: hidden;
+                }
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+
+                &:hover {
+                    span {
+                        visibility: visible;
+                    }
+
+                    a {
+                        color: gold;
+                    }
+                }
+            }
+        }
+    }
+}
