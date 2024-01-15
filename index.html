@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body style="overflow: hidden;">
@@ -28,25 +28,25 @@
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav">
                     <li class="nav-item me-3 mb-1">
-                        <a href="" role="button" class="nes-btn is-success py-0">Spring</a>
+                        <a href="https://www.java.com/en/download/help/whatis_java.html" role="button" target="_blank" class="nes-btn is-warning py-0">Java</a>
                     </li>
                     <li class="nav-item me-3 mb-1">
-                        <a href="" role="button" class="nes-btn is-warning py-0">Java</a>
+                        <a href="https://spring.io/projects/spring-framework/" role="button" target="_blank" class="nes-btn is-success py-0">Spring</a>
                     </li>
                     <li class="nav-item me-3 mb-1">
-                        <a href="" role="button" class="nes-btn is-error py-0">App</a>
+                        <a href="https://www.codecademy.com/article/what-is-rest" target="_blank" role="button" class="nes-btn is-error py-0">REST</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <header class="vh-100" style="background: url(/image/background/sunset.jpg) center/cover no-repeat;">
+    <header class="vh-100" style="background: url(img/background/sunset.jpg) center/cover no-repeat;">
         <!-- TITLE AND MENU -->
         <div class="container pt-5">
             <!-- LOGO -->
             <div class="mt-5 text-center user-select-none">
-                <img src="/image/image/logo.png" alt="" style="margin-top: 100px;" id="logo">
+                <img src="img/logo.png" alt="" style="margin-top: 100px;" id="logo">
             </div>
             <!-- MENU -->
             <div class="text-light row text-center user-select-none" style="margin-top: 120px; margin-right: 4ch;">
@@ -62,7 +62,7 @@
                 <label>
                     <input type="button" class="nes-radio" data-bs-toggle="offcanvas" data-bs-target="#offcanvasContact"
                         aria-expanded="false" aria-controls="" />
-                    <span class="select"><span>-> </span>Contact</span>
+                    <span class="select"><span>-> </span>Resume</span>
                 </label>
                 <label>
                     <input type="button" class="nes-radio" data-bs-toggle="modal" data-bs-target="#modalEmail" />
@@ -93,7 +93,7 @@
                 <div class="modal-content nes-container with-title border-0" style="background: transparent;">
                     <div class="nes-container is-rounded is-dark px-5 pt-5">
                         <p><span class="typewriter" style="--n:100">Stay awhile and listen! It's a me,
-                                MRKEVR. I am a
+                                MRKEVR. I am a Java
                                 developer. Let's fight bugs together!</span></p>
                         <div class="text-center mt-3">
                             <button type="button" class="nes-btn is-error" data-bs-dismiss="modal">Close</button>
@@ -105,40 +105,39 @@
         <!-- Modal Project -->
         <div class="offcanvas offcanvas-start vh-100" tabindex="-1" id="offcanvasProject"
             aria-labelledby="offcanvasProject"
-            style="background: url(/image/background/ocean2.jpg) center/cover no-repeat;">
+            style="background: url(img/background/ocean2.jpg) center/cover no-repeat;">
             <div class="offcanvas-header mt-5">
-                <h5 class="offcanvas-title text-center" id="offcanvasExampleLabel1">Project</h5>
+                <h5 class="offcanvas-title text-center" id="offcanvasExampleLabel1">Projects</h5>
                 <button type="button" class="nes-btn is-error" data-bs-dismiss="offcanvas" aria-label="Close">
                     x</button>
             </div>
             <div class="offcanvas-body">
-                <h5 class="fs-6 mb-5 text-center">"Sorry Adventurer, but our projects is in another link."</h5>
+                <h5 class="fs-6 mb-5 text-center">"Sorry Adventurer, but my projects are in another link."</h5>
                 <ul class="mt-3 list-unstyled mt-3">
-                    <li><span>-> </span><a href="">Project 1</a></li>
-                    <li><span>-> </span><a href="">Project 2</a></li>
-                    <li><span>-> </span><a href="">Project 3</a></li>
-                    <li><span>-> </span><a href="">Project 4</a></li>
-                    <li><span>-> </span><a href="">Project 5</a></li>
+                    <li><span>-> </span><a href="https://github.com/mrkevr/e-commerce" target="_blank">E-Commerce</a></li>
+                    <li><span>-> </span><a href="https://github.com/mrkevr/quiz-generator" target="_blank">Quiz Generator</a></li>
+                    <li><span>-> </span><a href="https://github.com/mrkevr/quiz-app" target="_blank"">Quiz API</a></li>
+                    <li><span>-> </span><a href="https://github.com/mrkevr/quiz-web-app" target="_blank">Quiz Web App</a></li>
+                    <li><span>-> </span><a href="https://github.com/mrkevr/errand-api" target="_blank">Errand App</a></li>
                 </ul>
             </div>
         </div>
         <!-- Modal Contact -->
         <div class="offcanvas offcanvas-end vh-100" tabindex="-1" id="offcanvasContact"
             aria-labelledby="Enable both scrolling & backdrop"
-            style="background: url(/image/background/ocean2.jpg) center/cover no-repeat;" data-bs-scroll="true">
+            style="background: url(img/background/ocean2.jpg) center/cover no-repeat;" data-bs-scroll="true">
             <div class="offcanvas-header mt-5">
-                <h5 class="offcanvas-title text-center" id="offcanvasExampleLabel2">Contact</h5>
+                <h5 class="offcanvas-title text-center" id="offcanvasExampleLabel2">Resume</h5>
                 <button type="button" class="nes-btn is-error" data-bs-dismiss="offcanvas" aria-label="Close">
                     x</button>
             </div>
             <div class="offcanvas-body">
-                <h5 class="fs-6 mb-5 text-center">"It's dangerous to go alone, contact me."</h5>
+                <h5 class="fs-6 mb-5 text-center">"It's dangerous to go alone, download this!"</h5>
                 <ul class="mt-3 list-unstyled mt-3">
-                    <li><span>-> </span><a href="">Contact 1</a></li>
-                    <li><span>-> </span><a href="">Contact 2</a></li>
-                    <li><span>-> </span><a href="">Contact 3</a></li>
+                    <li><span>-> </span><a href="https://drive.google.com/file/d/1EWJ-07VtyxvXolUQzqN0U4Enc70fjtTr/view?usp=drive_link" target="_blank">MY RESUME</a></li>
+                    <!-- <li><span>-> </span><a href="">Contact 3</a></li>
                     <li><span>-> </span><a href="">Contact 4</a></li>
-                    <li><span>-> </span><a href="">Contact 5</a></li>
+                    <li><span>-> </span><a href="">Contact 5</a></li> -->
                 </ul>
             </div>
         </div>
@@ -148,22 +147,25 @@
                 <div class="modal-content nes-container is-rounded is-dark">
                     <div class="modal-header text-center">"Adventurer, use this form. It's super effective!"</div>
                     <div class="modal-body">
-                        <form action="" class="">
+                        <form 
+                        class="gform" 
+                        action="https://script.google.com/macros/s/AKfycbwouXc-38YbiA9hd4KabB8AIQOMSe3DPiEpEE0wS172g6_qTceVIYKUkFvEvUuzzOF8vQ/exec" 
+                        method="post">
                             <div class="mb-3 row">
-                                <label for="name" class="col-sm-2 col-form-label me-5">Name</label>
+                                <label for="name" class="col-sm-2 col-form-label me-5"> Your Name</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="nes-input is-dark form-control py-0" id="name">
+                                    <input type="text" class="nes-input is-dark form-control py-0" id="name" name="name">
                                 </div>
                             </div>
                             <div class="mb-3 row">
-                                <label for="email" class="col-sm-2 col-form-label me-5">Email</label>
+                                <label for="email" class="col-sm-2 col-form-label me-5">Your Email</label>
                                 <div class="col-sm-10">
-                                    <input type="email" class="nes-input is-dark form-control py-0" id="email">
+                                    <input type="email" class="nes-input is-dark form-control py-0" id="email" name="email">
                                 </div>
                             </div>
                             <div class="">
                                 <label for="message">Message</label>
-                                <textarea id="message" style="height: 8ch;" class="nes-input is-dark"></textarea>
+                                <textarea id="message" style="height: 8ch;" class="nes-input is-dark" name="message"></textarea>
                             </div>
                             <div class="modal-footer d-flex flex-wrap justify-content-center">
                                 <button type="submit" class="nes-btn is-primary py-0"
@@ -182,11 +184,11 @@
         <!-- FOOTER -->
         <div class="footer bg-0 fixed-bottom text-center p-2 user-select-none" id="footer">
             <!-- facebook -->
-            <a href=""><i class="nes-icon facebook is-medium"></i></a>
+            <a href="https://www.facebook.com/mrkevr/" target="_blank"><i class="nes-icon facebook is-medium"></i></a>
             <!-- github -->
-            <a href=""><i class="nes-icon github is-medium"></i></a>
+            <a href="https://github.com/mrkevr" target="_blank"><i class="nes-icon github is-medium"></i></a>
             <!-- linkedin -->
-            <a href=""><i class="nes-icon linkedin is-medium"></i></a>
+            <a href="https://www.linkedin.com/in/mrkevr" target="_blank""><i class="nes-icon linkedin is-medium"></i></a>
             <!-- whatsapp -->
             <a href=""><i class="nes-icon whatsapp is-medium"></i></a>
         </div>
